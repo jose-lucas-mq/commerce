@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 
-import { SignIn } from './pages/signin'
+import { Home } from './pages/home'
 
 import { GlobalStyle } from './components/GlobalStyle'
 
@@ -10,8 +10,8 @@ const App = () => (
     <GlobalStyle />
     <Switch>
       
-      <Route exact path="/autenticacao">
-        <SignIn />
+      <Route exact path="/">
+        <Home />
       </Route>
 
     </Switch>

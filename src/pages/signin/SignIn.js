@@ -1,13 +1,29 @@
 import React from 'react'
-import { Square } from './SignIn.style'
-// import dogNotFoundImg from '../../images/dogNotFound.png'
+import { Banner, Background, Logo, Title, Label, Form, Input } from './SignIn.style'
 
 const SignIn = () => {
     return (
-        <>
-            <h2> Cadastro </h2>
-            <Square />
-        </>
+        <Background>
+            <Banner>
+                <Logo />
+                
+                <Title>
+                    Faça seu cadastro agora! 
+                </Title> 
+            </Banner>
+
+            <Form>
+                <Label>
+                    Seu primeiro nome
+                    <Input placeholder="ex: Nathalia" />
+                </Label>
+
+                <Label>
+                    Seu último nome
+                    <Input placeholder="ex: Santos" />
+                </Label>
+            </Form>
+        </Background>
     )
 }
 

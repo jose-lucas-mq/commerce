@@ -17,3 +17,8 @@ export const Logo = styled.div`
     background-size: cover;
     background-position: center center;
 `
+
+export const Options = styled.div`
+    display: flex;
+    align-items: center;
+`

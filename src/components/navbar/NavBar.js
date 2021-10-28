@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Cart } from './../cart'
+import { Account } from './../account'
 
-import { Logo, Nav } from './NavBar.style'
+import { Logo, Nav, Options } from './NavBar.style'
 
 const NavBar = () => {
     return (
@@ -10,7 +11,10 @@ const NavBar = () => {
             <Link to="/">
                 <Logo />
             </Link>
-            <Cart />
+            <Options>
+                <Cart />
+                <Account />
+            </Options>
 
         </Nav>
     )
